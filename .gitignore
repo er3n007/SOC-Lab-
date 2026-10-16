@@ -1,0 +1,11 @@
+# Never commit real credentials, IPs, or configs with live data
+*.ova
+*.iso
+secrets.*
+credentials.*
+.env
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+wazuh-rules/
