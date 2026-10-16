@@ -106,13 +106,9 @@ mini-soc-lab/
 - [ ] Develop and test custom detection rules
 - [ ] Document incident investigation workflows
 
-## `07` — Screenshots
 
-Dashboard screenshots and investigation evidence will be added here as the lab documentation develops.
 
-<!-- Add screenshots after uploading sanitized images to the screenshots/ directory. -->
-
-## `08` — Security Disclaimer
+## `07` — Security Disclaimer
 
 This project is intended for educational purposes in an isolated, controlled lab environment. Security testing should only be performed on systems for which authorization has been granted.
 
