@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mini SOC Lab
 
 A small Security Operations Center (SOC) lab built to get hands-on with the full
@@ -56,3 +57,6 @@ Next: attack simulations and custom detection rules, covered in a follow-up.
 
 This lab runs entirely on an isolated/controlled network. No real credentials, IP
 addresses, or organizational details are included in this repository.
+=======
+# SOC-Lab-
+>>>>>>> 98fa0295f68222d1a6bbd57acae8a749a2d7817e
