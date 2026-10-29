@@ -15,6 +15,9 @@ crackmapexec smb <dc-ip> -u <target-user> -p /usr/share/wordlists/rockyou.txt -d
 Stopped after a couple of minutes — long enough to generate a large burst of
 failed logons (10,000+ in this run) without exhausting the wordlist.
 
+![Attack command running in terminal](screenshots/00-brute-force-redacted.png)
+*crackmapexec spraying rockyou.txt against a domain account over SMB (IPs redacted)*
+
 ## Detection
 
 No custom rule needed — **Wazuh's built-in correlation rule already catches
@@ -27,17 +30,3 @@ this.**
   level 10
 
 Searched in Discover:
-```
-data.win.system.eventID:4625
-```
-and confirmed the `60204` escalation fired alongside the raw `60122` events.
-
-## Evidence
-
-See `screenshots/` (sanitized — real IPs/hostnames replaced before committing).
-
-## Notes
-
-Wazuh's default threshold for `60204` worked out of the box for this lab's
-scale/timing; worth checking the exact `frequency`/`timeframe` values on the
-base rule if tuning is ever needed for a quieter/noisier attack pace.
